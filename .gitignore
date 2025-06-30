@@ -1,0 +1,70 @@
+# General
+.DS_Store
+.env
+.venv/
+env/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+# Optionally ignore all Jupyter notebooks if they are purely for scratch work
+# *.ipynb
+
+# Hugging Face specific
+# Saved models and tokenizers (often large and shouldn't be in Git)
+*.bin
+*.safetensors
+config.json
+generation_config.json
+model.safetensors
+pytorch_model.bin
+tf_model.h5
+tokenizer_config.json
+vocab.json
+special_tokens_map.json
+tokenizer.json
+added_tokens.json # Sometimes present for custom tokens
+
+# Hugging Face Cache directories (crucial to ignore for disk space)
+cache/
+.cache/
+hf_cache/ # Common user-defined cache directory
+huggingface/
+~/.cache/huggingface/ # Default Hugging Face cache location (though usually outside repo)
+
+# Datasets
+data/
+datasets/
+# Common dataset file types (adjust if you intentionally want to commit small datasets)
+*.arrow
+*.csv
+*.jsonl
+*.parquet
+*.tsv
+*.txt
+
+# PyTorch specific (if any specific output files not covered by Hugging Face)
+# Often PyTorch models are saved as .pt or .pth
+*.pt
+*.pth
+
+# Logs and outputs
+logs/
+output/
+runs/ # Often used by TensorBoard, Accelerate, or other trainers
+wandb/ # Weights & Biases logs and run directories
+lightning_logs/ # PyTorch Lightning logs
+
+# VS Code specific
+.vscode/
+
+# macOS specific (already included but good to be explicit)
+.DS_Store
+.localized
+
+# Miscellaneous
+tmp/ # Temporary files
